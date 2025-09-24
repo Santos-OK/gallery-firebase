@@ -45,6 +45,7 @@ footer{
 .scoreCard {
   border-radius: 10px;
   box-shadow:  1px 1px 3px rgba(0,0,0,0.3);
+  flex-direction: column-reverse;
   min-height: 10vh;
   display: flex;
   justify-content: center;
@@ -62,11 +63,49 @@ footer{
 .gallery img{
     width: 260px;
     height: 350px;
-    margin: 1%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+
     transition: all 1s;
 }
 
 .scoreCard:hover {
   transform: scale(1.05);
   box-shadow:  5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.stars{
+  /*width: 100%;
+  margin: 10px;*/
+  text-align: center;
+  cursor: pointer;
+}
+
+.message{
+  margin-bottom: 10px;
+}
+
+.star{
+  font-size: 24px;
+
+  transition: all 0.2s;
+}
+
+.active{
+  font-size: 24px;
+  color: gold;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.active:hover{
+  color: yellow;
+  transform: scale(1.05);
+}
+
+.star:hover{
+  color: yellow;
+  transform: scale(1.05);
 }
